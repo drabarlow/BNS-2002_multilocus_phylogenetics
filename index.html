@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-locus phylogenetics</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Multi-locus phylogenetics">
+  <meta name="author" content="Dr Axel Barlow">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/custom.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    
+  <slide class="nobackground">
+    <article class="flexbox vcenter">
+      <span>
+        <img width='300px' src="assets/img/A1_FullColour.svg">
+      </span>
+    </article>
+  </slide>
+    <slide class="title-slide segue nobackground">
+  
+  <aside class="gdbar">
+    <img src="assets/img/LA_Full_colour_reversed.svg">
+  </aside>
+  
+  <hgroup class="auto-fadein">
+    <h1>Multi-locus phylogenetics</h1>
+    <h2>BNS-2002: Genes, Development, and Evolution</h2>
+    <p>Dr Axel Barlow<br/>email: a.barlow@bangor.ac.uk</p>
+  </hgroup>
+  
+  <article></article>  
+      
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  
+  <article data-timings="">
+    <!-- adding bold and italic options -->
+
+<style>
+em {
+  font-style: italic
+}
+strong {
+  font-weight: bold;
+}
+</style>
+
+<h2>Phylogenetics and population genetics lectures</h2>
+
+<ul>
+<li>Key concepts and Single locus phylogenetics</li>
+<li><strong>Multi-locus phylogenetics</strong>
+
+<ul>
+<li><strong>Theory</strong></li>
+<li><strong>Methods</strong></li>
+<li><strong>Discoveries</strong></li>
+</ul></li>
+<li>Population structure</li>
+<li>Conservation genetics</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-2" style="background:;">
+  
+  <hgroup>
+    <h2>Multi-locus phylogenetics - theory</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  
+  <hgroup>
+    <h2>How does the tree form: lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/linsort1.svg" alt="plot of chunk unnamed-chunk-1" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  
+  <hgroup>
+    <h2>How does the tree form: lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/linsort2.svg" alt="plot of chunk unnamed-chunk-2" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  
+  <hgroup>
+    <h2>How does the tree form: lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/linsort3.svg" alt="plot of chunk unnamed-chunk-3" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  
+  <hgroup>
+    <h2>How does the tree form: lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/linsort4.svg" alt="plot of chunk unnamed-chunk-4" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  
+  <hgroup>
+    <h2>How does the tree form: lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/linsort5.svg" alt="plot of chunk unnamed-chunk-5" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  
+  <hgroup>
+    <h2>Lineage sorting summary</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Drift sorts the lineages into clades</li>
+<li>This takes time, we can&#39;t detect the divergence immediately</li>
+<li>We go through stages of complete/incomplete monophyly</li>
+<li>incomplete to complete lineage sorting</li>
+<li>lineage sorting is faster when the population size is small (= more drift)</li>
+<li>Mutation builds upon the clades, monophyly is retained [unless there is gene flow]</li>
+<li>ILS can be a real problem for inferring relationships, especially in large populaitons with recent divergence events</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-9" style="background:white;">
+  
+  <article data-timings="">
+    <p><img src="./assets/img/istockphoto-840934838-612x612.jpg" alt="plot of chunk unnamed-chunk-6" width="60%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  
+  <hgroup>
+    <h2>Relying on a single locus tree could be misleading</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Incomplete lineage sorting could mean that clades do not correspond to species/populations</li>
+<li>Old divergence with small populations less likely to cause problems</li>
+<li>But no way of easily predicting/testing this from a single tree</li>
+<li>Also may fail to account for sex-specific differences (e.g. mtDNA and Y chromosome)</li>
+</ul>
+
+<h3>Solution: multiple loci</h3>
+
+<ul>
+<li>Increased statistical confidence</li>
+<li>Can detect sex-specific differences</li>
+<li>Can also quantify ILS (says something about pop size and divergence time)</li>
+<li>Potential to study <strong>gene flow</strong> [more later]</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-11" style="background:;">
+  
+  <hgroup>
+    <h2>Multi-locus phylogenetics - methods</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  
+  <hgroup>
+    <h2>Getting the data</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Modest number of loci</h3>
+
+<ul>
+<li>Several PCRs</li>
+<li>Transcriptomes</li>
+<li>Hybridisation capture
+
+<ul>
+<li>Ultraconserved elements</li>
+<li>Exomes</li>
+</ul></li>
+</ul>
+
+<h3>Whole genomes</h3>
+
+<ul>
+<li>de novo assembly and whole genome alignment [hard]</li>
+<li>shotgun whole genome resequencing</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  
+  <hgroup>
+    <h2>Shotgun whole genome sequencing</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/aDNA_seq.svg" alt="plot of chunk unnamed-chunk-7" width="95%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  
+  <hgroup>
+    <h2>Mapping to reference genome assembly</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>Whole sample DNA is sequenced in short reads</li>
+<li>These are &quot;mapped&quot; to a reference whole genome sequence based on similarity
+
+<ul>
+<li>Nuclear chromosomes</li>
+<li>Mitochondrial/chloroplast genomes</li>
+<li>Potentially other genomes too (bacteria, pathogens, etc.)</li>
+<li>Around £200 for a 2-3Gb genome, currently</li>
+</ul></li>
+</ul>
+
+<p><img src="./assets/img/pseudohap.svg" alt="plot of chunk unnamed-chunk-8" width="95%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  
+  <hgroup>
+    <h2>Data analysis</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <h3>Separate loci</h3>
+
+<ul>
+<li>Analyse each locus separately, look for concordant patterns</li>
+<li>Combine all together (concatenation)</li>
+<li>More complex models, e.g. multispecies coalescent</li>
+</ul>
+
+<h3>Whole genome</h3>
+
+<ul>
+<li>Concatenation easy</li>
+<li>Divide chromosomes into non-overlapping chunks (very approximate)
+
+<ul>
+<li>not based on actual recombination points</li>
+<li>mostly the diploid alleles are not phased</li>
+<li>in practise works very well</li>
+</ul></li>
+<li>More sophisticated methods that identify the true breakpoints between loci </li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-16" style="background:;">
+  
+  <hgroup>
+    <h2>Multi-locus phylogenetics - discoveries</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bears</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/arctos_mt.svg" alt="plot of chunk unnamed-chunk-9" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/arctos_map.svg" alt="plot of chunk unnamed-chunk-10" width="100%" style="display: block; margin: auto;" /></p>
+
+<ul>
+<li>Brown bears not monophyletic</li>
+<li>Divergence time ~120 Ka</li>
+<li>Incomplete lineage sorting (result of recent speciation)?</li>
+<li>Something else?</li>
+<li>Multiple divergent brown bear clades</li>
+<li>Evidence of glacial refugia</li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-18" style="background:white;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bear Y chromosome</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/arctos_y.svg" alt="plot of chunk unnamed-chunk-11" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-19" style="background:white;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bear autosomes</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/arctos_auto.svg" alt="plot of chunk unnamed-chunk-12" width="80%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>mtDNA suggests recent speciation and brown bear glacial refugia</li>
+<li>Y chromosome suggests species monophyly, no evidence of brown bear refugia</li>
+<li>Autosomes show species monophyly, and that the species are OLD (latest estimates, 1 million years)</li>
+</ul>
+
+<h3>Explanation</h3>
+
+<ul>
+<li>The 2 species are old and distinct</li>
+<li>Males move about more than females</li>
+<li>More recent mtDNA divergence suggests <strong>gene flow</strong></li>
+</ul>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-20" style="background:;">
+  
+  <hgroup>
+    <h2>Detecting gene flow</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-21" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary1.svg" alt="plot of chunk unnamed-chunk-13" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-22" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary2.svg" alt="plot of chunk unnamed-chunk-14" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-23" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary3.svg" alt="plot of chunk unnamed-chunk-15" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary4.svg" alt="plot of chunk unnamed-chunk-16" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary5.svg" alt="plot of chunk unnamed-chunk-17" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-26" style="background:;">
+  
+  <hgroup>
+    <h2>What if lineage sorting is incomplete?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-27" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary1.svg" alt="plot of chunk unnamed-chunk-18" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-28" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary2.svg" alt="plot of chunk unnamed-chunk-19" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-29" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/ils3.svg" alt="plot of chunk unnamed-chunk-20" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-30" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/ils4.svg" alt="plot of chunk unnamed-chunk-21" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-31" style="background:;">
+  
+  <hgroup>
+    <h2>Or...</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-32" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/ils3.svg" alt="plot of chunk unnamed-chunk-22" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with incomplete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/ils5.svg" alt="plot of chunk unnamed-chunk-23" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  
+  <hgroup>
+    <h2>Simulator</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <iframe src = 'https://www.whfreeman.com/BrainHoney/Resource/6716/SitebuilderUploads/Hillis2e/Student%20Resources/Animated%20Tutorials/pol2e_at_1502_genetic_drift_simulation/pol2e_at_1502_genetic_drift_simulation.html' height='600px'></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>[Note these a just some of the many outcomes you could imagine]</li>
+<li>The danger zone is when alleles fail to reach fixation early in the speciation process</li>
+<li>i.e. prior to brown bear population divergence in the example</li>
+<li>Because there is no selection for specific alleles, the process is random</li>
+<li>Either brown bear population may end up grouping with the polar bears</li>
+</ul>
+
+<h3>What can you predict about the relative frequencies of these alternatives?</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  
+  <hgroup>
+    <h2>Expected tree frequecies under ILS?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/freq.svg" alt="plot of chunk unnamed-chunk-24" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-37" style="background:;">
+  
+  <hgroup>
+    <h2>What about gene flow?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/beary5.svg" alt="plot of chunk unnamed-chunk-25" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/bearyG.svg" alt="plot of chunk unnamed-chunk-26" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  
+  <hgroup>
+    <h2>Speciation with complete lineage sorting</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/bearyG2.svg" alt="plot of chunk unnamed-chunk-27" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  
+  <hgroup>
+    <h2>Expected tree frequencies with gene flow?</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><img src="./assets/img/flow.svg" alt="plot of chunk unnamed-chunk-28" width="100%" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
+  
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <ul>
+<li>An inbalance in the non-species tree topologies provides evidence of gene flow</li>
+<li>Only works if you have sequenced a LOT of loci (whole genomes)</li>
+<li>Can detect very ancient events</li>
+<li>And sex-biases (e.g. X chromosome vs. autosome)</li>
+<li>Sometimes based on SNPs (D statistics, F-ratio statistics), essentially the same</li>
+<li>Revealed many examples of gene flow in the past decade</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-43" style="background:;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bears</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/arctos_mt.svg" alt="plot of chunk unnamed-chunk-29" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><strong>Nuclear genomes, 100 kb windows</strong></p>
+
+<p><img src="./assets/img/abc.svg" alt="plot of chunk unnamed-chunk-30" width="80%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-44" style="background:;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bear reading</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/2015-Genomic_evidence_of_geographically_widespread_effect_of_gene_flow_from_polar_bears_into_brown_bears..pdf" title="plot of chunk unnamed-chunk-31" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-45" style="background:;">
+  
+  <hgroup>
+    <h2>Brown bear and polar bear reading</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/2014-Brown_and_polar_bear_y_chromosomes_reveal_extensive_male-biased_gene_flow_within_brother_lineages.pdf" title="plot of chunk unnamed-chunk-32" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-46" style="background:;">
+  
+  <hgroup>
+    <h2>Cave bears and brown bears</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Cave bears are sister lineage to brown bears and polar bears</li>
+<li>Giant vegan bears</li>
+<li>Extinct ~25 Ka</li>
+<li>Lived alongside brown bears for most of their evolutionary history</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/kudarensis.png" alt="plot of chunk unnamed-chunk-33" width="100%" style="display: block; margin: auto;" /></p>
+
+<p><img src="./assets/img/Ursus_spelaeus_Sergiodlarosa.jpg" alt="plot of chunk unnamed-chunk-34" width="90%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-47" style="background:;">
+  
+  <hgroup>
+    <h2>Cave bears and brown bears</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><strong>Nuclear genomes, 100 kb windows</strong></p>
+
+<p><img src="./assets/img/cave_freq.svg" alt="plot of chunk unnamed-chunk-35" width="80%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/kudarensis.png" alt="plot of chunk unnamed-chunk-36" width="100%" style="display: block; margin: auto;" /></p>
+
+<p><img src="./assets/img/Ursus_spelaeus_Sergiodlarosa.jpg" alt="plot of chunk unnamed-chunk-37" width="90%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-48" style="background:;">
+  
+  <hgroup>
+    <h2>Cave bear reading</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/Barlow et al. - 2018 - Partial genomic survival of cave bears in living brown bears.pdf" title="plot of chunk unnamed-chunk-38" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-49" style="background:;">
+  
+  <hgroup>
+    <h2>Neanderthals and anatomically modern humans</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <ul>
+<li>Extinct population of modern humans</li>
+<li>Extinct ~40 Ka</li>
+<li>Basically a human (many morphological characters overlapping)</li>
+<li>Advanced culture, hunting technology, art, etc.</li>
+<li>Major dispersal of anatomically modern humans 70-50 Ka</li>
+<li>Population replacement or admixture?</li>
+</ul>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/neanderthal_woman-4x3.jpg" alt="plot of chunk unnamed-chunk-39" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-50" style="background:;">
+  
+  <hgroup>
+    <h2>Neanderthals and anatomically modern humans</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/neander.svg" alt="plot of chunk unnamed-chunk-40" width="100%" style="display: block; margin: auto;" /></p>
+
+<p>[SNP based analysis, but essentially the same]</p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img src="./assets/img/neanderthal_woman-4x3.jpg" alt="plot of chunk unnamed-chunk-41" width="100%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-51" style="background:;">
+  
+  <hgroup>
+    <h2>Neanderthal reading</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    <p><embed src="./assets/img/2010-A_draft_sequence_of_the_Neandertal_genome..pdf" title="plot of chunk unnamed-chunk-42" width="100%" height="500" type="application/pdf" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="" id="slide-52" style="background:;">
+  
+  <hgroup>
+    <h2>Bengal cat</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p><img src="./assets/img/far.jpg" alt="plot of chunk unnamed-chunk-43" width="90%" style="display: block; margin: auto;" /></p>
+
+<p><img src="./assets/img/Asian-Leopard-Cat-Prionailurus-bengalensis-758x432.webp" alt="plot of chunk unnamed-chunk-44" width="90%" style="display: block; margin: auto;" /></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <ul>
+<li>Hybrid domestic cat/<em>Prionailurus bengalensis</em></li>
+<li>F1 hybrids backcrossed 6+ generations</li>
+<li>Selection for coat pattern and other introgressed traits</li>
+<li>A framework to better understand the process and refine methodologies???</li>
+</ul>
+
+<p><img src="./assets/img/prio.svg" alt="plot of chunk unnamed-chunk-45" width="80%" style="display: block; margin: auto;" /></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="segue dark" id="slide-53" style="background:;">
+  
+  <hgroup>
+    <h2>Looking for an MSc project???</h2>
+  </hgroup>
+  
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  
+</slide>
+
+<slide class="thank-you-slide segue nobackground" id="slide-54">
+  <aside class="gdbar right"><img src="assets/img/LA_Full_colour_reversed.svg"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>Next time</h2>
+    <p><strong>Population structure</strong></p>
+
+  </article>
+
+  <p class="auto-fadein" data-config-contact="">
+    
+  </p>
+</slide>
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Multi-locus phylogenetics - theory'>
+         2
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How does the tree form: lineage sorting'>
+         3
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='How does the tree form: lineage sorting'>
+         4
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='How does the tree form: lineage sorting'>
+         5
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='How does the tree form: lineage sorting'>
+         6
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='How does the tree form: lineage sorting'>
+         7
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Lineage sorting summary'>
+         8
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='NA'>
+         9
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Relying on a single locus tree could be misleading'>
+         10
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Multi-locus phylogenetics - methods'>
+         11
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Getting the data'>
+         12
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Shotgun whole genome sequencing'>
+         13
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Mapping to reference genome assembly'>
+         14
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Data analysis'>
+         15
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Multi-locus phylogenetics - discoveries'>
+         16
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Brown bear and polar bears'>
+         17
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Brown bear and polar bear Y chromosome'>
+         18
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Brown bear and polar bear autosomes'>
+         19
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Detecting gene flow'>
+         20
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Speciation with complete lineage sorting'>
+         21
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Speciation with complete lineage sorting'>
+         22
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Speciation with complete lineage sorting'>
+         23
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Speciation with complete lineage sorting'>
+         24
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Speciation with complete lineage sorting'>
+         25
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='What if lineage sorting is incomplete?'>
+         26
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Speciation with incomplete lineage sorting'>
+         27
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Speciation with incomplete lineage sorting'>
+         28
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Speciation with incomplete lineage sorting'>
+         29
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Speciation with incomplete lineage sorting'>
+         30
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title='Or...'>
+         31
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Speciation with incomplete lineage sorting'>
+         32
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Speciation with incomplete lineage sorting'>
+         33
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Simulator'>
+         34
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Summary'>
+         35
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Expected tree frequecies under ILS?'>
+         36
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='What about gene flow?'>
+         37
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Speciation with complete lineage sorting'>
+         38
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Speciation with complete lineage sorting'>
+         39
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='Speciation with complete lineage sorting'>
+         40
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Expected tree frequencies with gene flow?'>
+         41
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Summary'>
+         42
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title='Brown bear and polar bears'>
+         43
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=44 title='Brown bear and polar bear reading'>
+         44
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=45 title='Brown bear and polar bear reading'>
+         45
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=46 title='Cave bears and brown bears'>
+         46
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=47 title='Cave bears and brown bears'>
+         47
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=48 title='Cave bear reading'>
+         48
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=49 title='Neanderthals and anatomically modern humans'>
+         49
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=50 title='Neanderthals and anatomically modern humans'>
+         50
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=51 title='Neanderthal reading'>
+         51
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=52 title='Bengal cat'>
+         52
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=53 title='Looking for an MSc project???'>
+         53
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=54 title='Next time'>
+         54
+      </a>
+    </li>
+    
+    </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
