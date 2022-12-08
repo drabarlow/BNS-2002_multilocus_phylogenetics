@@ -476,7 +476,7 @@ include_graphics("./assets/img/pseudohap.svg")
 
 *** =left
 
-**Nuclear genomes, 100 kb windows**
+**Nuclear genomes, 25 kb windows**
 
 ```{r, out.width = "80%", dpi = 300, echo = FALSE, fig.align = "center"}
   include_graphics("./assets/img/cave_freq.svg")
@@ -505,7 +505,7 @@ include_graphics("./assets/img/pseudohap.svg")
 
 *** =left
 
-- Extinct population of modern humans
+- Extinct population of humans
 - Extinct ~40 Ka
 - Basically a human (many morphological characters overlapping)
 - Advanced culture, hunting technology, art, etc.

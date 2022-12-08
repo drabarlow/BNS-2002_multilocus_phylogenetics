@@ -402,7 +402,7 @@ strong {
 
 *** =left
 
-**Nuclear genomes, 100 kb windows**
+**Nuclear genomes, 25 kb windows**
 
 <img src="./assets/img/cave_freq.svg" alt="plot of chunk unnamed-chunk-35" width="80%" style="display: block; margin: auto;" />
 *** =right
@@ -423,7 +423,7 @@ strong {
 
 *** =left
 
-- Extinct population of modern humans
+- Extinct population of humans
 - Extinct ~40 Ka
 - Basically a human (many morphological characters overlapping)
 - Advanced culture, hunting technology, art, etc.
