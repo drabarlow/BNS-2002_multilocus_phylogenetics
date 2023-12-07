@@ -94,7 +94,7 @@ strong {
 
 - Drift sorts the lineages into clades
 - This takes time, we can't detect the divergence immediately
-- We go through stages of complete/incomplete monophyly
+- We go through stages of incomplete/complete monophyly
 - incomplete to complete lineage sorting
 - lineage sorting is faster when the population size is small (= more drift)
 - Mutation builds upon the clades, monophyly is retained [unless there is gene flow]
@@ -160,7 +160,7 @@ include_graphics("./assets/img/aDNA_seq.svg")
   - Nuclear chromosomes
   - Mitochondrial/chloroplast genomes
   - Potentially other genomes too (bacteria, pathogens, etc.)
-  - Around £200 for a 2-3Gb genome, currently
+  - Around £150-200 for a 2-3Gb genome, currently
 
 ```{r, out.width = "95%", dpi = 300, echo = FALSE, fig.align='center'}
 include_graphics("./assets/img/pseudohap.svg")
@@ -571,7 +571,7 @@ include_graphics("./assets/img/pseudohap.svg")
 
 --- .segue .dark 
 
-## Looking for an MSc project???
+## MSc project?
 
 --- &thankyou
 
